@@ -1,0 +1,124 @@
+<!-- 9:04 sun may29 wk21 2022 -->
+<!-- 
+  AltSchool's Assignment B1: Portfolio Page
+  Third iteration
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>AltSchool's Assignment B1: Portfolio Page</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo">
+        <h1 class="h1-logo"><i>emmanuelEni</i></h1>
+      </div>
+      <nav class="nav-menu">
+        <a href="#about">{ aboutMe,</a>
+        <a href="#education">myEducation,</a>
+        <a href="#experiences">workExperiences,</a>
+        <a href="#positions-held">positionsHeld,</a>
+        <a href="#interests-hobbies">interestsAndHobbies,</a>
+        <a href="#skills-competence">skillsAndCompetence,</a>
+        <a href="#contact">contactMe };</a>
+      </nav>
+    </header>
+    <section class="main">
+      <article class="article-main">
+        <div class="div-about">
+          <div class="div-aproko">
+            <h2 id="about">About Me</h2>
+            <article>
+              <p>
+                Hey there, my name is <b>Emmanuel</b>. I'm an
+                <b>aspiring backend web developer</b>!
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <!-- MY EDUCATION -->
+
+        <div class="div-edu">
+          <div class="div-tatafo">
+            <article>
+              <h2 id="education">My Education</h2>
+              <ul>
+                <li>
+                  2007- 2013 Bachelor of Engineering Degree in Mechanical
+                  Engineering. University of Benin, Benin city, Edo State,
+                  Nigeria.
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+
+        <!-- CONTACT FORM -->
+
+        <div class="div-contact">
+          <article class="article-contact">
+            <h2 id="contact">Contact Me</h2>
+            <p>
+              Do you wish to get in touch with me? You can do that below. I'ld
+              like to hear from you.
+            </p>
+            <form id="form-contact" action="./received.html" method="get">
+              <div>
+                <input
+                  type="text"
+                  class="form-input"
+                  name="name"
+                  placeholder="Enter your name here"
+                  required
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  class="form-input"
+                  name="email"
+                  placeholder="Enter your email here"
+                  required
+                />
+              </div>
+              <div>
+                <textarea
+                  class="form-input"
+                  name="message"
+                  id="message"
+                  placeholder="Write your message here"
+                  cols="30"
+                  rows="10"
+                  required
+                ></textarea>
+              </div>
+              <div>
+                <button type="submit" class="form-button">
+                  Click here to submit
+                </button>
+              </div>
+            </form>
+          </article>
+        </div>
+      </article>
+    </section>
+    <footer class="footer">
+      <p><i>copyright Emmanuel 2022</i></p>
+    </footer>
+  </body>
+</html>
+
+<!-- <ul>
+    <li><h3>My Name:</h3> <p>Hey there, my name is <b>Emmanuel</b>.</p></li>
+    <li><h2>A sentence about me:</h2> <p>I'm a <b>hardcore petrolhead</b>!</p></li>
+    <li><h2>My goal for this diploma course:</h2> 
+        <p>My goal at AltSchool is to become a <b>proficient backend engineer</b>.</p>
+    </li>
+</ul>     -->

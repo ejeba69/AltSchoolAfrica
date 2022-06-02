@@ -1,23 +1,35 @@
 /* 
 9:06 sun may29 wk21 2022 
 2nd iteration of css practice for AltSchool's Assignment B1: Portfolio Page
+
+KEY: 
+l -- left
+r -- right
+t -- top
+b -- bottom
+h -- height
+w -- width
+vtc -- vertical
+hor -- horizontal
+clr -- color
+bkg -- background
 */
 
 :root {
   /* margin: */
-  --mar: 2rem;
-  --rmar: 15rem;
-  --lmar: 15rem;
+  --mar: 5%;
+  --rmar: 15%;
+  --lmar: 15%;
 
   /* box shadow: */
-  --ver-off: -10px;
-  --hor-off: 10px;
-  --blur: 5px;
-  --spread: 0px;
+  --ver-off: -20px;
+  --hor-off: 20px;
+  --blur: 15px;
+  --spread: 10px;
   --bs-col: rgb(31, 13, 31);
 
   /* border: */
-  --bor-rad: 15px;
+  --bor-rad: 40px;
   --bor-wit: 10px;
   --bor-col: rgb(204, 0, 204);
 
@@ -29,7 +41,7 @@
   line-height: 2rem;
   margin: 0;
   padding: 0;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   /* box-sizing: border-box; */
 }
 
@@ -43,7 +55,9 @@ body {
 header {
   background: url(./../img/blake-connally-B3l0g6HLxr8-unsplash.jpg) center #222;
   background-blend-mode: multiply;
-  height: 20rem;
+  /* height: 20rem; */
+  /* height: 100%; */
+  height: 100vh;
   /* box-shadow: 0 3px 5px rgb(44, 44, 238); */
   /* border-bottom-left-radius: 3px; */
   /* border-bottom-right-radius: 3px; */
@@ -98,7 +112,7 @@ a {
   flex-grow: 1;
 }
 
-.main {
+.article-main {
   /* padding-top: 5rem; */
   /* max-width: 60rem; */
 
@@ -111,43 +125,40 @@ a {
 .div-about {
   /* background: linear-gradient(to bottom, #000, darkpurple); */
   background: linear-gradient(to bottom, rgb(15, 0, 15), rgb(15, 0, 15));
-  /* padding: 5rem; */
-  /* padding-right: 30rem */
+  padding: 5% 10%;
+  /* padding-right: 10%; */
+  /* padding-left: 10%; */
   margin-top: var(--mar);
-  margin-bottom: var(--mar);
-  /* margin: var(--mar);
+  /* margin: var(--mar); */
   margin-left: var(--lmar);
-  margin-right: var(--rmar); */
+  margin-right: var(--rmar);
   /* max-width: 40rem; */
   border: var(--bor-wit) var(--bor-col) solid;
   border-radius: var(--bor-rad);
-  box-shadow: var(--ver-off) var(--hor-off) var(--blur) var(--spread)
-    var(--bs-col);
+  box-shadow: var(--ver-off) var(--hor-off) var(--blur) var(--spread) var(--bs-col);
   /* box-shadow: inset 15px 15px purple, inset -15px -15px purple; */
 
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: center; */
 }
 
 .div-edu {
   background: #222 url(./../img/gabriel-heinzer-g5jpH62pwes-unsplash.jpg) fixed;
   background-size: cover;
   background-blend-mode: multiply;
-  /* padding: 3rem 20rem; */
+  padding: 3% 20%;
   /* border: 1.5px solid greenyellow; */
   margin-top: var(--mar);
-  margin-bottom: var(--mar);
+  /* margin-bottom: var(--mar); */
+  padding-left: 25%;
+  padding-right: 25%;
 
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: stretch;
-  align-items: center;
-}
-
-.div-edu-2 {
-  width: 40rem;
+  justify-content: space-evenly;
+  align-items: baseline; */
 }
 
 #education {
@@ -157,28 +168,48 @@ a {
 
 .div-contact {
   background: linear-gradient(to bottom, rgb(15, 0, 15), rgb(15, 0, 15));
-  /* padding: 5rem;
-  margin: var(--mar);
+  padding: 5% 10%;
+  /* margin: var(--mar); */
   margin-left: var(--lmar);
-  margin-right: var(--rmar); */
+  margin-right: var(--rmar);
   margin-top: var(--mar);
   margin-bottom: var(--mar);
   border: var(--bor-wit) var(--bor-col) solid;
   border-radius: var(--bor-rad);
-  box-shadow: var(--ver-off) var(--hor-off) var(--blur) var(--spread)
-    var(--bs-col);
+  box-shadow: var(--ver-off) var(--hor-off) var(--blur) var(--spread) var(--bs-col);
 
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items: center; */
+}
+
+.article-contact {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-/* LINE WIDTH FOR PARAGRAPHS AND LISTS */
+#form-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-p, li {
+#form-contact div {
+  padding-top: 10%;
+}
+
+/* 
+
+
+  LINE WIDTH FOR PARAGRAPHS AND LISTS 
+*/
+
+p,
+li {
   /* width: 40rem; */
-  /* line-height: 3rem; */
+  line-height: 2.5rem;
 }
 
 #form-contact,
@@ -191,37 +222,18 @@ p, li {
 footer {
   /* text-align: center; */
 
-  background: url(./../img/juanjo-jaramillo-mZnx9429i94-unsplash.jpg) #222 right
-    top;
-  padding: 5rem;
+  background: url(./../img/juanjo-jaramillo-mZnx9429i94-unsplash.jpg) #222 right top;
+  padding: 3rem;
   background-blend-mode: multiply;
 
   display: flex;
   justify-content: space-evenly;
 }
 
-/* MEDIA QUERY */
+/*
 
-@media (max-width: 600px) {
-  :root {
-    /* margin: */
-    --mar: 2rem;
-    --rmar: 15rem;
-    --lmar: 15rem;
 
-    /* box shadow: */
-    --ver-off: -10px;
-    --hor-off: 10px;
-    --blur: 5px;
-    --spread: 0px;
-    --bs-col: rgb(31, 13, 31);
+  MEDIA QUERY 
+*/
 
-    /* border: */
-    --bor-rad: 15px;
-    --bor-wit: 10px;
-    --bor-col: rgb(204, 0, 204);
-
-    /* background */
-    --bac-col: rgb(15, 0, 15);
-  }
-}
+/* @media (max-width: 600px) {} */
